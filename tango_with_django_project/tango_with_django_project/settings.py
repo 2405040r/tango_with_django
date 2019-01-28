@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'rango',
+    'rango',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -104,6 +104,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Login url
+LOGIN_URL ='/rango/login'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/

@@ -5,3 +5,4 @@ password.txt
 rango_tests/
 **/__pycache__/
 **/migrations/
+media/
