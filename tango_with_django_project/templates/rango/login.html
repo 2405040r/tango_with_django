@@ -2,7 +2,11 @@
 {% load staticfiles %}
 
 {% block title_block %}
-  Login
+  {% if invalid_login %}
+    wronguser
+  {% else %}
+    Login
+  {% endif %}
 {% endblock %}
 
 {% block body_block %}
@@ -23,7 +27,7 @@
   <br/>
   <p> 
     {% if invalid_login %}
-      Incorrect username and password combination.
+      Invalid login details supplied.
     {% endif %}
   </p>
   <input type="submit"
